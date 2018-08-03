@@ -32,8 +32,20 @@ $(document).ready(function(){
 
     function pokemonsInfo(pokemonsInfo){
         console.log(pokemonsInfo);
-        
+        var pokemonImage = pokemonsInfo.sprites.front_shiny_female;
+        console.log(pokemonImage);
+        var pokemonName = pokemonsInfo.name;
+        console.log(pokemonName);
 
+        $("#pokemon-container").append(patternCreation(pokemonImage, pokemonName));
+    }
+
+    function patternCreation(pokemonImage, pokemonName){
+        var pattern = '<ul id="bottom-pokemon-info">'+
+            '<'
     }
 });
+
+
+
       
