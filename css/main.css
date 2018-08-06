@@ -11,6 +11,16 @@ body{
 
 #pokemon-container{
     background-color: whitesmoke;
-    width: 70%;
+    border-radius: 20px;
+    height: auto;
+    list-style-type: none;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    
+}
+
+#bottom-pokemon-info{
+    list-style-type: none;
 }
     

@@ -37,13 +37,21 @@ $(document).ready(function(){
         console.log(pokemonImage);
         var pokemonName = pokemonsInfo.name;
         console.log(pokemonName);
+        var abilities = pokemonsInfo.abilities;
+        console.log(abilities);
+        var types = pokemonsInfo.types;
+        console.log(types);
+        var height = pokemonName.height;
+        console.log(height);
+        var weight = pokemonsInfo.weight;
+        console.log(weight);
 
         $("#pokemon-container").append(patternCreation(pokemonImage, pokemonName));
     }
 
     function patternCreation(pokemonImage, pokemonName){
         var pattern = '<ul id="bottom-pokemon-info">'+
-            '<li><img src="' + pokemonImage + '"></li>'+
+            '<li><img src=" ' + pokemonImage + ' "></li>'+
             '<li>Name:' + pokemonName +'</li>'+
             '</ul>';
         return pattern;
