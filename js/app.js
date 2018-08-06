@@ -33,7 +33,7 @@ $(document).ready(function(){
 
     function pokemonsInfo(pokemonsInfo){
         console.log(pokemonsInfo);
-        var pokemonImage = pokemonsInfo.sprites.front_shiny_female;
+        var pokemonImage = pokemonsInfo.sprites.front_female;
         console.log(pokemonImage);
         var pokemonName = pokemonsInfo.name;
         console.log(pokemonName);
