@@ -28,6 +28,7 @@ $(document).ready(function(){
         .fail(function(){
             console.log('error')
         });
+
     }
 
     function pokemonsInfo(pokemonsInfo){
@@ -42,8 +43,13 @@ $(document).ready(function(){
 
     function patternCreation(pokemonImage, pokemonName){
         var pattern = '<ul id="bottom-pokemon-info">'+
-            '<'
+            '<li><img src="' + pokemonImage + '"></li>'+
+            '<li>Name:' + pokemonName +'</li>'+
+            '</ul>';
+        return pattern;
+
     }
+    
 });
 
 
