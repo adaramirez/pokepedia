@@ -3,6 +3,7 @@ const input = $('#inp');
 const container = $('#pokemon-container');
 let pokemonName;
 
+/*Adding function to button when you click it*/
 $(document).ready(function(){
     button.click(function(element){
         element.preventDefault();
@@ -15,7 +16,7 @@ $(document).ready(function(){
     /*Function to search the pokemons data*/
 
     function pokemonFinder(pokemonName){
-        $.ajax({
+        $.ajax({ /* Asynchronous JavaScript And XML */
             url: 'https://pokeapi.co/api/v2/pokemon/' + `${pokemonName}`,
             type: 'GET',
             datatype: 'json',
